@@ -1,0 +1,12 @@
+G:\vs\DAL\bin\Debug\DAL.exe.config
+G:\vs\DAL\bin\Debug\DAL.exe
+G:\vs\DAL\bin\Debug\DAL.pdb
+G:\vs\DAL\bin\Debug\EntityFramework.dll
+G:\vs\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\vs\DAL\bin\Debug\EntityFramework.xml
+G:\vs\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\vs\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+G:\vs\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\vs\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\vs\DAL\obj\Debug\DAL.exe
+G:\vs\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhoneBookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PhoneBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ContactNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="PhoneBookEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PhoneBooks" EntityType="Self.PhoneBook" />
+    <FunctionImport Name="USP_Insert">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Surname" Mode="In" Type="String" />
+      <Parameter Name="ContactNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="USP_Search">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Surname" Mode="In" Type="String" />
+      <Parameter Name="ContactNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="USP_Update">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Surname" Mode="In" Type="String" />
+      <Parameter Name="ContactNumber" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

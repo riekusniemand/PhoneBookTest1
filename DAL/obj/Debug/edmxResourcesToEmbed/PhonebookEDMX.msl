@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhoneBookModelStoreContainer" CdmEntityContainer="PhoneBookEntities">
+    <EntitySetMapping Name="PhoneBooks">
+      <EntityTypeMapping TypeName="PhoneBookModel.PhoneBook">
+        <MappingFragment StoreEntitySet="PhoneBook">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_Insert" FunctionName="PhoneBookModel.Store.USP_Insert" />
+    <FunctionImportMapping FunctionImportName="USP_Search" FunctionName="PhoneBookModel.Store.USP_Search" />
+    <FunctionImportMapping FunctionImportName="USP_Update" FunctionName="PhoneBookModel.Store.USP_Update" />
+  </EntityContainerMapping>
+</Mapping>
